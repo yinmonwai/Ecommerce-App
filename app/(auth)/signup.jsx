@@ -42,7 +42,7 @@ export default function SignUp() {
         <Text style={styles.linkText}>Already have an account? →</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.btn} onPress={() => router.replace('/login')}>
+      <TouchableOpacity style={styles.btn}>
         <Text style={styles.btnText}>SIGN UP</Text>
       </TouchableOpacity>
       
