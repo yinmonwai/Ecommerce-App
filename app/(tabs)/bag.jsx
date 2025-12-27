@@ -43,7 +43,6 @@ export default function BagScreen() {
   const renderBagItem = ({ item }) => (
     <View style={styles.card}>
       <Image source={{ uri: item.image }} style={styles.image} />
-      <div style={{ flex: 1 }}>
         <View style={styles.info}>
           <View style={styles.headerRow}>
             <Text style={styles.itemName}>{item.name}</Text>
@@ -63,7 +62,6 @@ export default function BagScreen() {
             <Text style={styles.priceText}>{item.price * item.quantity}$</Text>
           </View>
         </View>
-      </div>
     </View>
   );
 
