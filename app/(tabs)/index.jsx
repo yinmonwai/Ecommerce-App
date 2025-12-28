@@ -1,16 +1,16 @@
 import { Ionicons } from '@expo/vector-icons';
 import {
-    FlatList,
-    Image,
-    ImageBackground,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View
+  FlatList,
+  Image,
+  ImageBackground,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
 } from 'react-native';
 import { Colors } from '../../constants/Colors';
-
+import { useRouter } from 'expo-router';
 // --- Dummy Data ---
 const NEW_COLLECTION = [
   {
@@ -85,6 +85,7 @@ const NEW_COLLECTION = [
 
 // --- Sub-Component: Product Card ---
 const ProductCard = ({ item }) => (
+  
   <View style={styles.card}>
     <View style={styles.imageContainer}>
       <Image source={{ uri: item.image }} style={styles.productImg} />
@@ -136,6 +137,7 @@ const ProductCard = ({ item }) => (
 
 // --- Main Home Screen ---
 export default function HomeScreen() {
+  const router = useRouter();
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Hero Banner Section */}
@@ -145,7 +147,7 @@ export default function HomeScreen() {
       >
         <View style={styles.heroOverlay}>
           <Text style={styles.heroTitle}>Fashion{"\n"}sale</Text>
-          <TouchableOpacity style={styles.checkBtn}>
+          <TouchableOpacity style={styles.checkBtn} onPress={() => router.push('/visual-search')}>
             <Text style={styles.checkBtnText}>Check</Text>
           </TouchableOpacity>
         </View>

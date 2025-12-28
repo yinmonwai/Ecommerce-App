@@ -1,16 +1,18 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
+import { useRouter } from 'expo-router';
 import { SafeAreaView, ScrollView, StyleSheet, Switch, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import PasswordChangeModal from './password-change';
 
 export default function SettingsScreen() {
+    const router = useRouter();
     const [salesNotify, setSalesNotify] = useState(true);
     const [isModalVisible, setModalVisible] = useState(false);
 
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity><Ionicons name="chevron-back" size={24} /></TouchableOpacity>
+                  <TouchableOpacity onPress={() => router.replace('/profile')}><Ionicons name="chevron-back" size={28} /></TouchableOpacity>
                 <Ionicons name="search" size={24} />
             </View>
 
@@ -51,7 +53,6 @@ export default function SettingsScreen() {
         </SafeAreaView>
     );
 }
-
 const styles = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#F9F9F9' },
     header: { flexDirection: 'row', justifyContent: 'space-between', padding: 16 },

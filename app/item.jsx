@@ -113,7 +113,7 @@ export default function ItemScreen() {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.navHeader}>
-        <TouchableOpacity onPress={() => router.back()}><Ionicons name="chevron-back" size={28} /></TouchableOpacity>
+        <TouchableOpacity onPress={() => router.replace('/shop')}><Ionicons name="chevron-back" size={28} /></TouchableOpacity>
         <Ionicons name="search" size={26} />
       </View>
 
