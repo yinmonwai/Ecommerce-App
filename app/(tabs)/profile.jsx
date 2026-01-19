@@ -1,49 +1,3 @@
-// import { Ionicons } from '@expo/vector-icons';
-// import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-// import { Colors } from '../../constants/Colors';
-
-// export default function ProfileScreen() {
-//   const MENU = ['My orders', 'Shipping addresses', 'Payment methods', 'Promocodes', 'My reviews', 'Settings'];
-
-//   return (
-//     <View style={styles.container}>
-//       <Text style={styles.title}>My profile</Text>
-      
-//       <View style={styles.header}>
-//         <Image source={{ uri: 'https://i.pravatar.cc/150' }} style={styles.avatar} />
-//         <View style={styles.info}>
-//           <Text style={styles.name}>Matilda Brown</Text>
-//           <Text style={styles.email}>matildabrown@mail.com</Text>
-//         </View>
-//       </View>
-
-//       {MENU.map((item) => (
-//         <TouchableOpacity key={item} style={styles.menuItem}>
-//           <View>
-//             <Text style={styles.menuText}>{item}</Text>
-//             <Text style={styles.menuSub}>Already have 12 orders</Text>
-//           </View>
-//           <Ionicons name="chevron-forward" size={20} color={Colors.gray} />
-//         </TouchableOpacity>
-//       ))}
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: { flex: 1, backgroundColor: Colors.background, padding: 15 },
-//   title: { fontSize: 34, fontWeight: 'bold', marginTop: 50, marginBottom: 20 },
-//   header: { flexDirection: 'row', alignItems: 'center', marginBottom: 30 },
-//   avatar: { width: 70, height: 70, borderRadius: 35 },
-//   info: { marginLeft: 15 },
-//   name: { fontSize: 18, fontWeight: 'bold' },
-//   email: { color: Colors.gray },
-//   menuItem: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 15, borderBottomWidth: 0.5, borderBottomColor: '#eee' },
-//   menuText: { fontSize: 16, fontWeight: '600' },
-//   menuSub: { fontSize: 11, color: Colors.gray }
-// });
-
-
 import React from 'react';
 import {
   View,
@@ -86,7 +40,7 @@ export default function ProfileScreen() {
     {
       title: 'Promocodes',
       subtitle: 'You have special promocodes',
-      route: '/promocodes', // Path if you create it later
+      route: '/promocodes',
     },
     {
       title: 'My reviews',

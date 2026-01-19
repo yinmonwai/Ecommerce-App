@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
 // import { useState } from 'react';
 // import {
 //   Alert,
-//   StyleSheet, // ✅ FIX 1: import StyleSheet
+//   StyleSheet, // FIX 1: import StyleSheet
 //   Text,
 //   TextInput,
 //   TouchableOpacity,
@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
 //   );
 // }
 
-// /* ✅ FIX 2: styles definition */
+// /*  FIX 2: styles definition */
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,

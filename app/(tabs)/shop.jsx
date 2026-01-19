@@ -3,7 +3,6 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import {
   Dimensions,
-  FlatList,
   Image,
   Modal,
   SafeAreaView,
